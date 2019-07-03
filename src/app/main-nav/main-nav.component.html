@@ -3,14 +3,10 @@
       [attr.role]="(isHandset$ | async) ? 'dialog' : 'navigation'"
       [mode]="(isHandset$ | async) ? 'over' : 'side'"
       [opened]="(isHandset$ | async) === false">
-    <mat-toolbar class="sidebar-name" *ngIf="(isHandset$ | async) === false">
-      <mat-toolbar-row>
-        <h1>Aaron Harrison</h1>
-      </mat-toolbar-row>
-      <mat-toolbar-row>
-        <span>Full Stack Developer</span>
-      </mat-toolbar-row>
-    </mat-toolbar>
+    <div class="logo" *ngIf="(isHandset$ | async) === false">
+      <h1>Aaron Harrison</h1>
+      <span>Full Stack Developer</span>
+    </div>
     <mat-nav-list class="nav-list">
       <a mat-list-item href="#"><mat-icon style="color: #26a69a;">nature_people</mat-icon><span>About</span></a>
       <a mat-list-item href="#"><mat-icon style="color: #ffeb3b;">flash_on</mat-icon><span>Projects</span></a>

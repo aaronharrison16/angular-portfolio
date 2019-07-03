@@ -1,3 +1,5 @@
+$primary-color: #03A9F4;
+
 .sidenav-container {
   height: 100%;
 }
@@ -17,6 +19,8 @@
 }
 
 .nav-list {
+  padding: 0px;
+
   span {
     font-size: 1.5em;
     margin-left: 15px;
@@ -24,26 +28,29 @@
   }
 
   a {
-    margin: 8px 0px;
+    height: 60px;
+    transition: all 0.25s ease;
+    font-size: 15px;
+
+    &:hover {
+      background-color: #f8f8f8;
+      border-left: 4px solid $primary-color;
+    }
   }
 }
 
-mat-toolbar-row {
-  padding: 0px;
-}
+.logo{
+  background-color: #f8f8f8;
+  padding: 25px;
+  border-bottom: 1px solid #b9b9b9;
 
-.sidebar-name {
-  margin-top: 25px;
-
-  
   h1 {
-    width: 100%;
-    text-align: center;
+    margin: 0px 0px 10px 0px;
+    font-weight: lighter;
+    color: $primary-color;
   }
 
   span {
-    font-size: .7em;
-    width: 100%;
-    text-align: center;
+    color: black .8;
   }
 }
