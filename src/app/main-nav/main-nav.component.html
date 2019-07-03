@@ -1,0 +1,37 @@
+<mat-sidenav-container class="sidenav-container">
+  <mat-sidenav #drawer class="sidenav" fixedInViewport
+      [attr.role]="(isHandset$ | async) ? 'dialog' : 'navigation'"
+      [mode]="(isHandset$ | async) ? 'over' : 'side'"
+      [opened]="(isHandset$ | async) === false">
+    <mat-toolbar class="sidebar-name" *ngIf="(isHandset$ | async) === false">
+      <mat-toolbar-row>
+        <h1>Aaron Harrison</h1>
+      </mat-toolbar-row>
+      <mat-toolbar-row>
+        <span>Full Stack Developer</span>
+      </mat-toolbar-row>
+    </mat-toolbar>
+    <mat-nav-list class="nav-list">
+      <a mat-list-item href="#"><mat-icon style="color: #26a69a;">nature_people</mat-icon><span>About</span></a>
+      <a mat-list-item href="#"><mat-icon style="color: #ffeb3b;">flash_on</mat-icon><span>Projects</span></a>
+      <a mat-list-item href="#"><mat-icon style="color: #f44336;">bubble_chart</mat-icon><span>Skills</span></a>
+      <a mat-list-item href="#"><mat-icon style="color: #9c27b0;">school</mat-icon><span>Education</span></a>
+      <a mat-list-item href="#"><mat-icon style="color: #43a047;">ballot</mat-icon><span>Experience</span></a>
+      <a mat-list-item href="#"><mat-icon style="color: #ff5722;">send</mat-icon><span>Contact</span></a>
+      <a mat-list-item href="#"><mat-icon style="color: #03A9F4;">business_center</mat-icon><span>Resume</span></a>
+    </mat-nav-list>
+  </mat-sidenav>
+  <mat-sidenav-content>
+    <mat-toolbar color="primary" *ngIf="isHandset$ | async">
+      <button
+        type="button"
+        aria-label="Toggle sidenav"
+        mat-icon-button
+        (click)="drawer.toggle()">
+        <mat-icon aria-label="Side nav toggle icon">menu</mat-icon>
+      </button>
+      <span>Aaron Harrison</span>
+    </mat-toolbar>
+    <!-- Add Content Here -->
+  </mat-sidenav-content>
+</mat-sidenav-container>
