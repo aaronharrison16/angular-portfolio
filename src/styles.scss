@@ -1,12 +1,25 @@
 html, body { height: 100%; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
 
+p {
+  font-size: 25px;
+  line-height: 2em;
+  font-weight: 300;
+}
+
+.container {
+  width: 100%;
+}
+
+.content {
+  padding: 5% 10%;
+}
+
 .section-heading {
   height: 155px !important;
 
   span {
-    margin-left: 50px; 
-    color: #03A9F4;
+    margin-left: 3%; 
     font-size: 3em;
     font-weight: 400;
   }
