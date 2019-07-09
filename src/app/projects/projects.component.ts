@@ -8,6 +8,10 @@ import { Project } from './project.model';
 })
 
 export class ProjectsComponent implements OnInit {
+  
+
+  
+
   public projects: Project[] = [
     new Project(
       "Material Shopping List",
@@ -58,4 +62,16 @@ export class ProjectsComponent implements OnInit {
   ngOnInit() {
   }
 
+  onProjectSelect(index) {
+    var show = document.getElementById("show_project_"+index);
+    var main = document.getElementById("main_project_"+index);
+
+    if (show.style.display === "none") {
+      show.style.display = "block";
+      main.style.display = "none";
+    } else {
+      show.style.display = "none";
+      main.style.display = "block";
+    }
+  }
 }

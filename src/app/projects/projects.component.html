@@ -4,12 +4,23 @@
   </mat-toolbar>
 
   <div class="card-container">
-    <mat-card *ngFor="let project of projects;">
-      <img mat-card-image src='{{ project.imagePath }}' alt="{{ project.alt }}">
-      <h2>{{project.title}}</h2>
-      <mat-card-content>
-        {{ project.subtitle }}
-      </mat-card-content>     
+    <mat-card  matRipple [matRippleColor]="primary" *ngFor="let project of projects; let i = index" id="project_{{i}}">
+      <div id="main_project_{{i}}" (click)="onProjectSelect(i)">
+        <img mat-card-image src='{{ project.imagePath }}' alt="{{ project.alt }}">
+        <h2>{{project.title}}</h2>
+        <mat-card-content>
+          {{ project.subtitle }}
+        </mat-card-content> 
+   
+      </div>
+      <div style="display: none;" id="show_project_{{i}}">
+        <mat-card-content>
+          TEST TEST TEST TEST TEST TEST TEST
+        </mat-card-content>
+                <mat-card-actions>
+                  <button mat-stroked-button>test</button>
+                </mat-card-actions>
+      </div>
     </mat-card>
   </div>
 </div>
