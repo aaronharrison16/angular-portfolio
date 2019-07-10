@@ -5,7 +5,7 @@ import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MainNavComponent } from './main-nav/main-nav.component';
 import { LayoutModule } from '@angular/cdk/layout';
-import { MatToolbarModule, MatButtonModule, MatSidenavModule, MatIconModule, MatListModule, MatCardModule, MatExpansionModule, MatRippleModule } from '@angular/material';
+import { MatToolbarModule, MatButtonModule, MatSidenavModule, MatIconModule, MatListModule, MatCardModule, MatExpansionModule, MatRippleModule, MatTooltipModule } from '@angular/material';
 import { IntroComponent } from './intro/intro.component';
 import { AboutComponent } from './about/about.component';
 import { ProjectsComponent } from './projects/projects.component';
@@ -42,7 +42,8 @@ import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
     MatCardModule,
     MatExpansionModule,
     FontAwesomeModule,
-    MatRippleModule
+    MatRippleModule,
+    MatTooltipModule
   ],
   providers: [],
   bootstrap: [AppComponent]

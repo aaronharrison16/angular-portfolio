@@ -11,15 +11,40 @@
 mat-card {
   margin: 1% 0.5%;
   width: 400px;
-  height: 325px;
+  height: 350px;
+
+  mat-card-title {
+    font-size: 1.8em;
+    font-weight: 400;
+    margin: 10px 0px;
+  }
 
   &:hover {
     cursor: pointer;
   }
 }
 
-h2 {
-  margin: 15px 0 12px 0;
-  font-size: 2em;
+.info-buttons {
+  position: absolute;
+  bottom: 20px;
+  right: 15px;
+
+  button {
+    margin-left: 8px;
+
+    a {
+      color: white;
+    }
+    
+  }
+}
+
+li {
+  font-size: 1.4em;
+  line-height: 30px;
   font-weight: 400;
+}
+
+.mat-expanded {
+  height: 100%;
 }
