@@ -13,14 +13,14 @@ mat-card {
   width: 400px;
   height: 350px;
 
+  img {
+    height: 200px;
+  }
+
   mat-card-title {
     font-size: 1.8em;
     font-weight: 400;
     margin: 10px 0px;
-  }
-
-  &:hover {
-    cursor: pointer;
   }
 }
 
