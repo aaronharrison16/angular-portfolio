@@ -1,39 +1,41 @@
-<mat-sidenav-container class="sidenav-container">
-  <mat-sidenav #drawer class="sidenav" fixedInViewport
-      [attr.role]="(isHandset$ | async) ? 'dialog' : 'navigation'"
-      [mode]="(isHandset$ | async) ? 'over' : 'side'"
-      [opened]="(isHandset$ | async) === false">
-    <div class="logo" *ngIf="(isHandset$ | async) === false">
-      <h1>Aaron Harrison</h1>
-      <span>Full Stack Developer</span>
-    </div>
-    <mat-nav-list class="nav-list">
-      <a mat-list-item href="#"><mat-icon style="color: #26a69a;">nature_people</mat-icon><span>About</span></a>
-      <a mat-list-item href="#"><mat-icon style="color: #ffeb3b;">flash_on</mat-icon><span>Projects</span></a>
-      <a mat-list-item href="#"><mat-icon style="color: #f44336;">bubble_chart</mat-icon><span>Skills</span></a>
-      <a mat-list-item href="#"><mat-icon style="color: #9c27b0;">school</mat-icon><span>Education</span></a>
-      <a mat-list-item href="#"><mat-icon style="color: #43a047;">ballot</mat-icon><span>Experience</span></a>
-      <a mat-list-item href="#"><mat-icon style="color: #ff5722;">send</mat-icon><span>Contact</span></a>
-      <a mat-list-item target="_blank" href="https://drive.google.com/open?id=12aOAu6YbHPCBRb-In2KQrYgbcnIL9mQO"><mat-icon style="color: #03A9F4;">business_center</mat-icon><span>Resume</span></a>
-    </mat-nav-list>
-  </mat-sidenav>
-  <mat-sidenav-content>
-    <mat-toolbar color="primary" *ngIf="isHandset$ | async">
-      <button
-        type="button"
-        aria-label="Toggle sidenav"
-        mat-icon-button
-        (click)="drawer.toggle()">
-        <mat-icon aria-label="Side nav toggle icon">menu</mat-icon>
-      </button>
-      <span>Aaron Harrison</span>
-    </mat-toolbar>
-    <app-intro></app-intro>
-    <app-about></app-about>
-    <app-projects></app-projects>
-    <app-skills></app-skills>
-    <app-education></app-education>
-    <app-experience></app-experience>
-    <app-contact></app-contact>
-  </mat-sidenav-content>
-</mat-sidenav-container>
+<nav>
+  <mat-sidenav-container class="sidenav-container">
+    <mat-sidenav #drawer class="sidenav" fixedInViewport
+        [attr.role]="(isHandset$ | async) ? 'dialog' : 'navigation'"
+        [mode]="(isHandset$ | async) ? 'over' : 'side'"
+        [opened]="(isHandset$ | async) === false">
+      <div class="logo" *ngIf="(isHandset$ | async) === false">
+        <h1>Aaron Harrison</h1>
+        <span>Full Stack Developer</span>
+      </div>
+      <mat-nav-list class="nav-list">
+        <a mat-list-item (click)="onNavSelect(about)"><mat-icon style="color: #26a69a;">nature_people</mat-icon><span>About</span></a>
+        <a mat-list-item (click)="onNavSelect(projects)"><mat-icon style="color: #ffeb3b;">flash_on</mat-icon><span>Projects</span></a>
+        <a mat-list-item (click)="onNavSelect(skills)"><mat-icon style="color: #f44336;">bubble_chart</mat-icon><span>Skills</span></a>
+        <a mat-list-item (click)="onNavSelect(education)"><mat-icon style="color: #9c27b0;">school</mat-icon><span>Education</span></a>
+        <a mat-list-item (click)="onNavSelect(experience)"><mat-icon style="color: #43a047;">ballot</mat-icon><span>Experience</span></a>
+        <a mat-list-item (click)="onNavSelect(send)"><mat-icon style="color: #ff5722;">send</mat-icon><span>Contact</span></a>
+        <a mat-list-item target="_blank" href="https://drive.google.com/open?id=12aOAu6YbHPCBRb-In2KQrYgbcnIL9mQO"><mat-icon style="color: #03A9F4;">business_center</mat-icon><span>Resume</span></a>
+      </mat-nav-list>
+    </mat-sidenav>
+    <mat-sidenav-content>
+      <mat-toolbar color="primary" *ngIf="isHandset$ | async">
+        <button
+          type="button"
+          aria-label="Toggle sidenav"
+          mat-icon-button
+          (click)="drawer.toggle()">
+          <mat-icon aria-label="Side nav toggle icon">menu</mat-icon>
+        </button>
+        <span>Aaron Harrison</span>
+      </mat-toolbar>
+      <app-intro #intro></app-intro>
+      <app-about #about></app-about>
+      <app-projects #projects></app-projects>
+      <app-skills #skills></app-skills>
+      <app-education #education></app-education>
+      <app-experience #experience></app-experience>
+      <app-contact #contact></app-contact>
+    </mat-sidenav-content>
+  </mat-sidenav-container>
+</nav>

@@ -17,4 +17,9 @@ export class MainNavComponent {
 
   constructor(private breakpointObserver: BreakpointObserver) {}
 
+  public onNavSelect(element: any) {
+    console.log(element);
+
+  }
+
 }
