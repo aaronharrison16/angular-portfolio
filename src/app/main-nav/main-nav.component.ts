@@ -9,6 +9,7 @@ import { map } from 'rxjs/operators';
   styleUrls: ['./main-nav.component.scss']
 })
 export class MainNavComponent {
+  currentSection = 'intro';
 
   isHandset$: Observable<boolean> = this.breakpointObserver.observe(Breakpoints.Handset)
     .pipe(
@@ -17,9 +18,13 @@ export class MainNavComponent {
 
   constructor(private breakpointObserver: BreakpointObserver) {}
 
-  public onNavSelect(element: any) {
-    console.log(element);
+  onSectionChange(sectionId: string) {
+    this.currentSection = sectionId;
+    console.log(sectionId);
+  }
 
+  scrollTo(section) {
+    document.querySelector('#' + section).scrollIntoView({ behavior: "smooth", block: "start" });
   }
 
 }
