@@ -20,6 +20,7 @@ $primary-color: #03A9F4;
 
 .nav-list {
   padding: 0px;
+  overflow: hidden;
 
   span {
     font-size: 1.5em;
@@ -29,7 +30,6 @@ $primary-color: #03A9F4;
 
   a {
     height: 60px;
-    width: 190px;
     transition: all 0.25s ease;
     font-size: 15px;
 
