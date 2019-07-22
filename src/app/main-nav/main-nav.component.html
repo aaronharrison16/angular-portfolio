@@ -4,19 +4,19 @@
         [attr.role]="(isHandset$ | async) ? 'dialog' : 'navigation'"
         [mode]="(isHandset$ | async) ? 'over' : 'side'"
         [opened]="(isHandset$ | async) === false">
-      <div (click)="scrollTo('intro')" class="logo" *ngIf="(isHandset$ | async) === false">
-        <div routerLink="/">
+      <div  routerLink="/" class="logo" *ngIf="(isHandset$ | async) === false">
+        <div>
           <h1>Aaron Harrison</h1>
           <span style="color: whitesmoke;">Full Stack Developer</span>
         </div>
       </div>
       <mat-nav-list class="nav-list">
-        <a mat-list-item routerLink="about"><mat-icon style="color: #26a69a;">nature_people</mat-icon><span>About</span></a>
-        <a mat-list-item routerLink="projects"><mat-icon style="color: #ffeb3b;">flash_on</mat-icon><span>Projects</span></a>
-        <a mat-list-item routerLink="skills"><mat-icon style="color: #f44336;">bubble_chart</mat-icon><span>Skills</span></a>
-        <a mat-list-item routerLink="education"><mat-icon style="color: #9c27b0;">school</mat-icon><span>Education</span></a>
-        <a mat-list-item routerLink="experience"><mat-icon style="color: #43a047;">ballot</mat-icon><span>Experience</span></a>
-        <a mat-list-item routerLink="contact"><mat-icon style="color: #ff5722;">send</mat-icon><span>Contact</span></a>
+        <a mat-list-item routerLinkActive='active' routerLink="about"><mat-icon style="color: #26a69a;">nature_people</mat-icon><span>About</span></a>
+        <a mat-list-item routerLinkActive='active' routerLink="projects"><mat-icon style="color: #ffeb3b;">flash_on</mat-icon><span>Projects</span></a>
+        <a mat-list-item routerLinkActive='active' routerLink="skills"><mat-icon style="color: #f44336;">bubble_chart</mat-icon><span>Skills</span></a>
+        <a mat-list-item routerLinkActive='active' routerLink="education"><mat-icon style="color: #9c27b0;">school</mat-icon><span>Education</span></a>
+        <a mat-list-item routerLinkActive='active' routerLink="experience"><mat-icon style="color: #43a047;">ballot</mat-icon><span>Experience</span></a>
+        <a mat-list-item routerLinkActive='active' routerLink="contact"><mat-icon style="color: #ff5722;">send</mat-icon><span>Contact</span></a>
         <a mat-list-item target="_blank" href="https://drive.google.com/open?id=12aOAu6YbHPCBRb-In2KQrYgbcnIL9mQO"><mat-icon style="color: #03A9F4;">business_center</mat-icon><span>Resume</span></a>
       </mat-nav-list>
     </mat-sidenav>

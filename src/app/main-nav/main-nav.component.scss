@@ -35,9 +35,14 @@ $primary-color: #03A9F4;
 
     &:hover {
       background-color: #f8f8f8;
-      border-left: 4px solid $primary-color;
+      border-left: 6px solid $primary-color;
     }
   }
+}
+
+.active {
+  background-color: #f8f8f8;
+  border-left: 6px solid $primary-color;
 }
 
 .logo{
