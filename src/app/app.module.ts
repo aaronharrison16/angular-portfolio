@@ -17,7 +17,7 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { library } from '@fortawesome/fontawesome-svg-core';
 import { faLinkedinIn, faGithub } from '@fortawesome/free-brands-svg-icons';
 import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
-import { ScrollSpyDirective } from './scroll-spy.directive';
+import { AppRoutingModule } from './app-routing.module';
 
 @NgModule({
   declarations: [
@@ -30,7 +30,6 @@ import { ScrollSpyDirective } from './scroll-spy.directive';
     EducationComponent,
     ExperienceComponent,
     ContactComponent,
-    ScrollSpyDirective
   ],
   imports: [
     BrowserModule,
@@ -45,7 +44,8 @@ import { ScrollSpyDirective } from './scroll-spy.directive';
     MatExpansionModule,
     FontAwesomeModule,
     MatRippleModule,
-    MatTooltipModule
+    MatTooltipModule,
+    AppRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -41,18 +41,17 @@ $primary-color: #03A9F4;
 }
 
 .logo{
-  background-color: #f8f8f8;
-  padding: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: $primary-color;
+  height: 140px;
   border-bottom: 1px solid #b9b9b9;
   cursor: pointer;
 
   h1 {
     margin: 0px 0px 10px 0px;
     font-weight: lighter;
-    color: $primary-color;
-  }
-
-  span {
-    color: black .8;
+    color: white;
   }
 }

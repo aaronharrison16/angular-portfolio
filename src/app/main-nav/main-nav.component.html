@@ -5,18 +5,19 @@
         [mode]="(isHandset$ | async) ? 'over' : 'side'"
         [opened]="(isHandset$ | async) === false">
       <div (click)="scrollTo('intro')" class="logo" *ngIf="(isHandset$ | async) === false">
-        <h1>Aaron Harrison</h1>
-        <span>Full Stack Developer</span>
+        <div routerLink="/">
+          <h1>Aaron Harrison</h1>
+          <span style="color: whitesmoke;">Full Stack Developer</span>
+        </div>
       </div>
       <mat-nav-list class="nav-list">
-        <a mat-list-item (click)="scrollTo('about')"><mat-icon style="color: #26a69a;">nature_people</mat-icon><span>About</span></a>
-        <a mat-list-item (click)="scrollTo('projects')"><mat-icon style="color: #ffeb3b;">flash_on</mat-icon><span>Projects</span></a>
-        <a mat-list-item (click)="scrollTo('skills')"><mat-icon style="color: #f44336;">bubble_chart</mat-icon><span>Skills</span></a>
-        <a mat-list-item (click)="scrollTo('education')"><mat-icon style="color: #9c27b0;">school</mat-icon><span>Education</span></a>
-        <a mat-list-item (click)="scrollTo('experience')"><mat-icon style="color: #43a047;">ballot</mat-icon><span>Experience</span></a>
-        <a mat-list-item (click)="scrollTo('contact')"><mat-icon style="color: #ff5722;">send</mat-icon><span>Contact</span></a>
+        <a mat-list-item routerLink="about"><mat-icon style="color: #26a69a;">nature_people</mat-icon><span>About</span></a>
+        <a mat-list-item routerLink="projects"><mat-icon style="color: #ffeb3b;">flash_on</mat-icon><span>Projects</span></a>
+        <a mat-list-item routerLink="skills"><mat-icon style="color: #f44336;">bubble_chart</mat-icon><span>Skills</span></a>
+        <a mat-list-item routerLink="education"><mat-icon style="color: #9c27b0;">school</mat-icon><span>Education</span></a>
+        <a mat-list-item routerLink="experience"><mat-icon style="color: #43a047;">ballot</mat-icon><span>Experience</span></a>
+        <a mat-list-item routerLink="contact"><mat-icon style="color: #ff5722;">send</mat-icon><span>Contact</span></a>
         <a mat-list-item target="_blank" href="https://drive.google.com/open?id=12aOAu6YbHPCBRb-In2KQrYgbcnIL9mQO"><mat-icon style="color: #03A9F4;">business_center</mat-icon><span>Resume</span></a>
-        <p>{{currentSection}}</p>
       </mat-nav-list>
     </mat-sidenav>
     <mat-sidenav-content>
@@ -30,29 +31,7 @@
         </button>
         <span>Aaron Harrison</span>
       </mat-toolbar>
-      <div id="parentDiv" scrollSpy [spiedTags]="['DIV']" (sectionChange)="onSectionChange($event)">
-        <div id="intro">
-          <app-intro id="itro"></app-intro>
-        </div>
-        <div id="about">
-          <app-about></app-about>
-        </div>
-        <div id="projects">
-          <app-projects></app-projects>
-        </div>
-        <div id="skills">
-          <app-skills></app-skills>
-        </div>
-        <div id="education">
-          <app-education></app-education>
-        </div>
-        <div id="experience">
-          <app-experience></app-experience>
-        </div>
-        <div id="contact">
-          <app-contact></app-contact>
-        </div>
-      </div>
+        <router-outlet></router-outlet>
     </mat-sidenav-content>
   </mat-sidenav-container>
 </nav>

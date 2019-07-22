@@ -9,6 +9,7 @@ p {
 
 .container {
   width: 100%;
+  min-height: 100vh;
 }
 
 .content {
@@ -16,7 +17,7 @@ p {
 }
 
 .section-heading {
-  height: 155px !important;
+  height: 140px !important;
 
   span {
     margin-left: 3%; 

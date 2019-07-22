@@ -18,13 +18,4 @@ export class MainNavComponent {
 
   constructor(private breakpointObserver: BreakpointObserver) {}
 
-  onSectionChange(sectionId: string) {
-    this.currentSection = sectionId;
-    console.log(sectionId);
-  }
-
-  scrollTo(section) {
-    document.querySelector('#' + section).scrollIntoView({ behavior: "smooth", block: "start" });
-  }
-
 }
