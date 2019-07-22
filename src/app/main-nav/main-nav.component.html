@@ -4,7 +4,7 @@
         [attr.role]="(isHandset$ | async) ? 'dialog' : 'navigation'"
         [mode]="(isHandset$ | async) ? 'over' : 'side'"
         [opened]="(isHandset$ | async) === false">
-      <div  routerLink="/" class="logo" *ngIf="(isHandset$ | async) === false">
+      <div routerLink="/" class="logo" *ngIf="(isHandset$ | async) === false">
         <div>
           <h1>Aaron Harrison</h1>
           <span style="color: whitesmoke;">Full Stack Developer</span>
@@ -29,7 +29,7 @@
           (click)="drawer.toggle()">
           <mat-icon aria-label="Side nav toggle icon">menu</mat-icon>
         </button>
-        <span>Aaron Harrison</span>
+        <span routerLink="/">Aaron Harrison</span>
       </mat-toolbar>
         <router-outlet></router-outlet>
     </mat-sidenav-content>
