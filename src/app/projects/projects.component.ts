@@ -17,7 +17,7 @@ export class ProjectsComponent implements OnInit {
     new Project(
       "Material Shopping List",
       "Shopping List application with shopping cart feature.",
-      "../../assets/images/materialShoppingListScreenshot.JPG",
+      "https://angular-portfolio-bucket.s3-us-west-1.amazonaws.com/materialShoppingListScreenshot.JPG",
       "Material Shopping list screenshot",
       "https://github.com/aaronharrison16/materialShoppingList",
       "https://shopping-list-material.firebaseapp.com/",
@@ -31,7 +31,7 @@ export class ProjectsComponent implements OnInit {
     new Project(
       "Utah Water Right Exchange",
       "Application built to serve as a trading platform for water rights broker.",
-      "../../assets/images/utahWaterRightExchangeScreenshot.JPG",
+      "https://angular-portfolio-bucket.s3-us-west-1.amazonaws.com/utahWaterRightExchangeScreenshot.JPG",
       "Utah water right exchange screenshot",
       "https://github.com/aaronharrison16/water_rights_exchange",
       "https://www.utahwaterrightexchange.com/",
@@ -44,7 +44,7 @@ export class ProjectsComponent implements OnInit {
     new Project(
       "Original Portfolio",
       "My original portfolio application built as one of my first projets.",
-      "../../assets/images/oldPortfolioScreenshot.JPG",
+      "https://angular-portfolio-bucket.s3-us-west-1.amazonaws.com/oldPortfolioScreenshot.JPG",
       "Aaron Harrison old portfolio screenshot",
       "https://github.com/aaronharrison16/portfolio",
       "https://aaronharrison-portfolio.herokuapp.com/",
@@ -58,7 +58,7 @@ export class ProjectsComponent implements OnInit {
     new Project(
       "Harrison View Tool",
       "Ruby Gem created to generate HTML for Ruby on Rails Projects",
-      "../../assets/images/RubyGem.jpeg",
+      "https://angular-portfolio-bucket.s3-us-west-1.amazonaws.com/RubyGem.jpeg",
       "Ruby on rails logo",
       "https://github.com/aaronharrison16/harrison-view-tool",
       "https://rubygems.org/gems/harrison_view_tool",
@@ -72,7 +72,7 @@ export class ProjectsComponent implements OnInit {
     new Project(
       "Overtime Tracker",
       "Application for tracking any overtime submitted by employees.",
-      "../../assets/images/overtime_tracking_screenshot.JPG",
+      "https://angular-portfolio-bucket.s3-us-west-1.amazonaws.com/overtime_tracking_screenshot.JPG",
       "overtime tracking application screenshot",
       "https://github.com/aaronharrison16/portfolio",
       "https://aaronharrison-portfolio.herokuapp.com/",
@@ -85,7 +85,7 @@ export class ProjectsComponent implements OnInit {
     new Project(
       "Material Shopping List",
       "Shopping List application with shopping cart feature.",
-      "../../assets/images/materialShoppingListScreenshot.JPG",
+      "https://angular-portfolio-bucket.s3-us-west-1.amazonaws.com/materialShoppingListScreenshot.JPG",
       "Material Shopping list screenshot",
       "https://github.com/aaronharrison16/portfolio",
       "https://aaronharrison-portfolio.herokuapp.com/",
