@@ -1,23 +1,27 @@
-# Portfolio
+# My Portfolio
 
-## Dev Notes
+---
 
-Thanks for taking a look at my projects. This is a new Portfolio application that I am building to provide a place to showcase some of my favorite accomplishments and projects. Feel free to take a look at my other projects while you are here, and don't hesitate to reach out if you are interested in working together.
+## Technologies Used
 
-Thanks, and happy coding!
+* [Angular](https://angular.io/)- Built using the Angular Javascript framework
+* [Angular Material](https://material.angular.io/)- Helpful Angular add on with components built with Google's material design in mind
+* [Github Pages](https://pages.github.com/)- Hosted on github pages platform
+* Custom SCSS to tie it all together
 
-## Development server
+## TODO
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+### Content
 
-## Build
+* Write the about me section
+* Add to bullet points for job experience section
+* add to bllet points for projects
+* update information for 6th project to be overtime tracker info
+* add education bullet points to bottega
+* write information for UVU education
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+### Development
 
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
+* Add enterance animations for routes/components
+* Fix image issues
+* Add aaronjharrison.com as a custom url 
