@@ -19,3 +19,4 @@
 * Add enterance animations for routes/components
 * Fix image issues
 * Add aaronjharrison.com as a custom url 
+* Add custom favicon
