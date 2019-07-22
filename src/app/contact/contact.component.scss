@@ -28,16 +28,28 @@ a {
 
 @media (max-width: 1050px) {
   a {
-    font-size: 1em;
+    font-size: 1.25em;
     margin: 0px;
   }
 
   .icon {
-    font-size: 1em;
+    font-size: 1.25em;
     margin-right:15px;
   }
 
   .contact-components {
     margin: 5px;
+  }
+
+  .content  {
+    padding: 10% 5px;
+  }
+
+  mat-card {
+    padding: 5% 0px;
+
+    ul {
+      padding: 10px;
+    }
   }
 }

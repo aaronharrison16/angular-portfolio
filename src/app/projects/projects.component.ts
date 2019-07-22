@@ -17,14 +17,15 @@ export class ProjectsComponent implements OnInit {
     new Project(
       "Material Shopping List",
       "Shopping List application with shopping cart feature.",
-      "https://angular-portfolio-bucket.s3-us-west-1.amazonaws.com/materialShoppingListScreenshot.JPG",
+      "https://angular-portfolio-bucket.s3-us-west-1.amazonaws.com/Screenshot_20190722-085010_Chrome-01-01.jpeg",
       "Material Shopping list screenshot",
       "https://github.com/aaronharrison16/materialShoppingList",
       "https://shopping-list-material.firebaseapp.com/",
       [ new ProjectInfo("Angular7 frontend"),
         new ProjectInfo("Built with Angular Material"),
         new ProjectInfo("Firebase backend"),
-        new ProjectInfo("Firebase Google sign in Authentication")
+        new ProjectInfo("Firebase Google sign in Authentication"),
+        new ProjectInfo("Implements HTTP requests to connect to Firebase"),
       ]
     ),
 
@@ -37,7 +38,9 @@ export class ProjectsComponent implements OnInit {
       "https://www.utahwaterrightexchange.com/",
       [ new ProjectInfo("Built with Ruby on Rails"),
         new ProjectInfo("Bootstrap CSS framework"),
-        new ProjectInfo("Includes authentication"),
+        new ProjectInfo("Devise Authentication"),
+        new ProjectInfo("Test Driven Development using rspec & Capybara"),
+        new ProjectInfo("Implements Mailgun API for sending emails to users on the platform"),
       ]
     ),
 
@@ -50,8 +53,9 @@ export class ProjectsComponent implements OnInit {
       "https://aaronharrison-portfolio.herokuapp.com/",
       [ new ProjectInfo("Built with Ruby on Rails"),
         new ProjectInfo("Bootstrap CSS framework"),
-        new ProjectInfo("Connected to Twitter API"),
-        new ProjectInfo("Javascript drag and drop interface")
+        new ProjectInfo("Connected to Twitter API for live tweets"),
+        new ProjectInfo("Javascript drag and drop interface for admin on Portfolio page"),
+        new ProjectInfo("Comment feature built with CoffeeScript and ActionCable web-sockets for live updates."),
       ]
     ),
 
@@ -62,10 +66,10 @@ export class ProjectsComponent implements OnInit {
       "Ruby on rails logo",
       "https://github.com/aaronharrison16/harrison-view-tool",
       "https://rubygems.org/gems/harrison_view_tool",
-      [ new ProjectInfo("Built with Ruby on Rails"),
-        new ProjectInfo("Bootstrap CSS framework"),
-        new ProjectInfo("Connected to Twitter API"),
-        new ProjectInfo("Javascript drag and drop interface")
+      [ new ProjectInfo("Custom Ruby Gem"),
+        new ProjectInfo("Generates dynamic HTML code for Ruby on Rails applications"),
+        new ProjectInfo("Used mostly for application footers to keep up to date copyright information"),
+        new ProjectInfo("400+ downloads")
       ]
     ),
 
@@ -74,25 +78,28 @@ export class ProjectsComponent implements OnInit {
       "Application for tracking any overtime submitted by employees.",
       "https://angular-portfolio-bucket.s3-us-west-1.amazonaws.com/overtime_tracking_screenshot.JPG",
       "overtime tracking application screenshot",
-      "https://github.com/aaronharrison16/portfolio",
-      "https://aaronharrison-portfolio.herokuapp.com/",
-      [ new ProjectInfo("Angular5 frontend"),
+      "https://github.com/aaronharrison16/overtime",
+      "https://harrison-overtime.herokuapp.com/",
+      [ new ProjectInfo("Built using Ruby on Rails"),
         new ProjectInfo("Bootstrap CSS framework"),
-        new ProjectInfo("Ruby Microservice architecture"),
+        new ProjectInfo("Test Driven Development using rspec & Capybara"),
+        new ProjectInfo("Integrated SparkPost API for scheduled text messages"),
+        new ProjectInfo("Hosted on Heroku"),
       ]
     ),
 
     new Project(
-      "Material Shopping List",
-      "Shopping List application with shopping cart feature.",
+      "Freelance Tracker",
+      "Built for freelance developers to track their projects",
       "https://angular-portfolio-bucket.s3-us-west-1.amazonaws.com/materialShoppingListScreenshot.JPG",
-      "Material Shopping list screenshot",
+      "Freelance Tracker Screenshot",
       "https://github.com/aaronharrison16/portfolio",
       "https://aaronharrison-portfolio.herokuapp.com/",
-      [ new ProjectInfo("Built with Ruby on Rails"),
+      [ new ProjectInfo("Built with Ruby on Rails microservice"),
+        new ProjectInfo("Built with Angular6 framework"),
         new ProjectInfo("Bootstrap CSS framework"),
-        new ProjectInfo("Connected to Twitter API"),
-        new ProjectInfo("Javascript drag and drop interface")
+        new ProjectInfo("Microservice hosted on Heroku"),
+        new ProjectInfo("Angular pages hosted on Github Pages")
       ]
     ),
       
