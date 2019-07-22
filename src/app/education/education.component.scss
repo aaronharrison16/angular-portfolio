@@ -5,16 +5,26 @@ mat-card {
 mat-card-title {
   font-size: 2em;
   font-weight: 400;
+  color: #03A9F4;
 }
 
 mat-card-subtitle {
   font-size: 1.5em;
+  color: black;
 }
 
 mat-card-content {
   font-size: 1.2em;
+
+  ul{
+    padding: 0px;
+
+    li {
+      list-style: none;
+      margin-bottom: 5px;
+    }
+  }
 }
 
-li {
-  list-style: none;
-}
+
+  

@@ -45,18 +45,28 @@ $primary-color: #03A9F4;
   border-left: 6px solid $primary-color;
 }
 
-.logo{
+.logo {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: $primary-color;
+  background-color: #FAFAFA;
   height: 140px;
-  border-bottom: 1px solid #b9b9b9;
+  border-bottom: 1px solid #E0E0E0;
   cursor: pointer;
+
+  &:focus {
+    outline: none;
+  }
 
   h1 {
     margin: 0px 0px 10px 0px;
-    font-weight: lighter;
-    color: white;
+    font-weight: 300;
+    font-size: 2em;
+    color: $primary-color;
   }
+}
+
+.mobile-header {
+  position: fixed !important;
+  top: 0 !important;
 }

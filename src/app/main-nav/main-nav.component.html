@@ -6,8 +6,8 @@
         [opened]="(isHandset$ | async) === false">
       <div routerLink="/" class="logo" *ngIf="(isHandset$ | async) === false">
         <div>
-          <h1>Aaron Harrison</h1>
-          <span style="color: whitesmoke;">Full Stack Developer</span>
+          <h1>Aaron <br> Harrison</h1>
+          <span>Full Stack Developer</span>
         </div>
       </div>
       <mat-nav-list class="nav-list">
@@ -21,7 +21,7 @@
       </mat-nav-list>
     </mat-sidenav>
     <mat-sidenav-content>
-      <mat-toolbar color="primary" *ngIf="isHandset$ | async">
+      <mat-toolbar class="mobile-header" color="primary" *ngIf="isHandset$ | async">
         <button
           type="button"
           aria-label="Toggle sidenav"
