@@ -91,10 +91,10 @@ export class ProjectsComponent implements OnInit {
     new Project(
       "Freelance Tracker",
       "Built for freelance developers to track their projects",
-      "https://angular-portfolio-bucket.s3-us-west-1.amazonaws.com/materialShoppingListScreenshot.JPG",
+      "https://angular-portfolio-bucket.s3-us-west-1.amazonaws.com/freelance_tracker_screenshot.png",
       "Freelance Tracker Screenshot",
-      "https://github.com/aaronharrison16/portfolio",
-      "https://aaronharrison-portfolio.herokuapp.com/",
+      "https://github.com/aaronharrison16/freelance-tracker",
+      "https://aaronharrison16.github.io/freelance-tracker/",
       [ new ProjectInfo("Built with Ruby on Rails microservice"),
         new ProjectInfo("Built with Angular6 framework"),
         new ProjectInfo("Bootstrap CSS framework"),
