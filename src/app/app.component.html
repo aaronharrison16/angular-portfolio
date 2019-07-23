@@ -31,7 +31,7 @@
       </a>
     </mat-nav-list>
   </mat-sidenav>
-  <mat-sidenav-content>
+  <mat-sidenav-content class="pages">
     <mat-toolbar class="mobile-header" color="primary" *ngIf="isHandset$ | async">
       <button type="button" aria-label="Toggle sidenav" mat-icon-button (click)="drawer.toggle()">
         <mat-icon aria-label="Side nav toggle icon">menu</mat-icon>
@@ -39,6 +39,9 @@
       <span routerLink="/">Aaron Harrison</span>
     </mat-toolbar>
 
-    <router-outlet></router-outlet>
+    <div [@routeAnimations]="prepareRoute(outlet)">
+      <router-outlet #outlet="outlet"></router-outlet>
+    </div>
+
   </mat-sidenav-content>
 </mat-sidenav-container>

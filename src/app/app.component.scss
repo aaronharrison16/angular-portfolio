@@ -2,6 +2,7 @@ $primary-color: #03A9F4;
 
 .sidenav-container {
   height: 100%;
+  overflow-x: hidden;
 }
 
 .sidenav {
@@ -69,4 +70,8 @@ $primary-color: #03A9F4;
 .mobile-header {
   position: fixed !important;
   top: 0 !important;
+}
+
+.pages {
+  overflow-x: hidden;
 }

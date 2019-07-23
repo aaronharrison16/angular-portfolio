@@ -10,13 +10,13 @@ import { ExperienceComponent } from './experience/experience.component';
 import { ContactComponent } from './contact/contact.component';
 
 const appRoutes: Routes = [
-  { path: '', component: IntroComponent },
-  { path: 'about', component: AboutComponent },
-  { path: 'projects', component: ProjectsComponent },
-  { path: 'skills', component: SkillsComponent },
-  { path: 'education', component: EducationComponent },
-  { path: 'experience', component: ExperienceComponent },
-  { path: 'contact', component: ContactComponent },
+  { path: '', component: IntroComponent, data: { animation: 'intro' }  },
+  { path: 'about', component: AboutComponent, data: { animation: 'about' }  },
+  { path: 'projects', component: ProjectsComponent, data: { animation: 'projects' }  },
+  { path: 'skills', component: SkillsComponent, data: { animation: 'skills' }  },
+  { path: 'education', component: EducationComponent, data: { animation: 'education' }  },
+  { path: 'experience', component: ExperienceComponent, data: { animation: 'experience' }  },
+  { path: 'contact', component: ContactComponent, data: { animation: 'contact' }  },
 ]
 
 @NgModule({

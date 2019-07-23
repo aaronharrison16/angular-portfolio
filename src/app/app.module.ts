@@ -32,6 +32,7 @@ import { AppRoutingModule } from './app-routing.module';
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
+    AppRoutingModule,
     LayoutModule,
     MatToolbarModule,
     MatButtonModule,
@@ -40,10 +41,9 @@ import { AppRoutingModule } from './app-routing.module';
     MatListModule,
     MatCardModule,
     MatExpansionModule,
-    FontAwesomeModule,
     MatRippleModule,
     MatTooltipModule,
-    AppRoutingModule
+    FontAwesomeModule
   ],
   providers: [],
   bootstrap: [AppComponent]
