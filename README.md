@@ -8,15 +8,8 @@
 
 ## TODO
 ### Content
-* Write the about me section
-* Add to bullet points for job experience section
-* add to bllet points for projects
 * update information for 6th project to be overtime tracker info
-* add education bullet points to bottega
-* write information for UVU education
 
 ### Development
-* Add enterance animations for routes/components
-* Fix image issues
 * Add aaronjharrison.com as a custom url 
 * Add custom favicon
