@@ -11,13 +11,7 @@ import {
 
 export const slider =
   trigger('routeAnimations', [
-    transition('intro => *', slideTo('right')),
-    transition('about => *', slideTo('right')),
-    transition('projects => *', slideTo('right')),
-    transition('skills => *', slideTo('right')),
-    transition('education => *', slideTo('right')),
-    transition('experience => *', slideTo('right')),
-    transition('contact => *', slideTo('left')),
+    transition('* => *', slideTo('right')),
   ]);
 
 function slideTo(direction) {
