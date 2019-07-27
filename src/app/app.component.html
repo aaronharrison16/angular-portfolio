@@ -8,6 +8,9 @@
       </div>
     </div>
     <mat-nav-list class="nav-list">
+      <a mat-list-item routerLinkActive='active' [routerLinkActiveOptions]="{ exact: true }" routerLink="/">
+        <mat-icon style="color: #607d8b;">home</mat-icon><span>Home</span>
+      </a>
       <a mat-list-item routerLinkActive='active' routerLink="about">
         <mat-icon style="color: #26a69a;">nature_people</mat-icon><span>About</span>
       </a>
