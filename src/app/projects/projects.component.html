@@ -11,32 +11,26 @@
       </mat-card-title>
       <mat-card-content>
         {{ project.subtitle }}
+
+        <ul>
+          <li *ngFor="let info of project.projectInfo">{{ info.content }}</li>
+        </ul>
       </mat-card-content> 
 
       <mat-card-footer>
-        <mat-expansion-panel style="position: absolute; right: 0px; bottom: 0px; width: 100%;">
-          <mat-expansion-panel-header>
-            <mat-panel-title>
-              More Info
-            </mat-panel-title>
-          </mat-expansion-panel-header>
-          <ul>
-            <li *ngFor="let info of project.projectInfo">{{ info.content }}</li>
-          </ul>
-          <div class="info-buttons">
-            <button mat-fab matTooltip="View Code">
-              <a target="_blank" href="{{ project.github }}">
-                <mat-icon>code</mat-icon>
-              </a>
-            </button>
-
-            <button mat-fab matTooltip="View Project">
-              <a target="_blank" href="{{ project.site }}">
-                <mat-icon>web</mat-icon>
-              </a>
-            </button>
-          </div>          
-        </mat-expansion-panel>
+        <div class="info-buttons">
+          <button mat-fab matTooltip="View Code">
+            <a target="_blank" href="{{ project.github }}">
+              <mat-icon>code</mat-icon>
+            </a>
+          </button>
+        
+          <button mat-fab matTooltip="View Project">
+            <a target="_blank" href="{{ project.site }}">
+              <mat-icon>web</mat-icon>
+            </a>
+          </button>
+        </div>
       </mat-card-footer>
     </mat-card>
   </div>

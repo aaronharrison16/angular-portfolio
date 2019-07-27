@@ -11,7 +11,7 @@
 mat-card {
   margin: 1% 0.5%;
   width: 400px;
-  height: 350px;
+  height: 525px;
 
   img {
     height: 200px;
@@ -23,6 +23,15 @@ mat-card {
     font-size: 1.8em;
     font-weight: 400;
     margin: 10px 0px;
+  }
+
+  mat-card-content {
+    line-height: 1.5em;
+  }
+
+  ul {
+    margin-top: 5px;
+    padding-left: 20px;
   }
 }
 
@@ -39,14 +48,4 @@ mat-card {
     }
     
   }
-}
-
-li {
-  font-size: 1.4em;
-  line-height: 30px;
-  font-weight: 400;
-}
-
-.mat-expanded {
-  height: 100%;
 }
