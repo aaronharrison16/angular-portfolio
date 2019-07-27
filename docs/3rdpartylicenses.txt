@@ -66,8 +66,6 @@ THE SOFTWARE.
 
 @angular/material/core
 
-@angular/material/expansion
-
 @angular/material/icon
 
 @angular/material/list
